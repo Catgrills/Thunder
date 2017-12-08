@@ -1,12 +1,12 @@
 # Thunder-W
 
-![screenshot](https://a.pomf.cat/gendpi.png)
-Preview of Matcha-V.
+![screenshot](https://i.imgur.com/sSchEAU.jpg)
+Preview of Thunder-W.
 
 About
 -------------------------------
 
-Matcha-V is a custom stylesheet for kissanime.
+Thunder-W is a custom stylesheet for tumblr.
 
 A custom stylesheet (or userstyles) a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
 
