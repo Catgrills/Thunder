@@ -370,6 +370,10 @@
         display: inline-block !important;
         float: none !important;
     }
+    .new_post_label i {
+        font-size: 3vw !important;
+    	margin-left: 4px !important;                                        
+    }
     #dashboard_index .post-form .post-container,
 	#dashboard_posts_likes .post-form .post-container,
 	#tagged_actions_display .post-form .post-container {
