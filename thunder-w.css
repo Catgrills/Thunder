@@ -420,7 +420,7 @@
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column #posts.posts,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column #posts.posts {
 	    /*** DASHBOARD/TAGGED LEFT COLUMN POSTS ***/
-	    margin: 0 0 0 80px !important;
+	    margin: 0 7vw !important;
 	    display: flex !important;
 	    flex-flow: row wrap !important;
 	}
