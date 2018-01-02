@@ -2,12 +2,11 @@
 /* GENERAL */
 /** DESCRIPTION : change the elements of all page **/
 	* {
-        box-sizing: border-box;
 	    font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 	}
 	body {
-    	overflow-x: hidden;                                        
-    }
+        overflow-x: hidden;
+	}
 	.popover_menu_item:hover,
 	.blog-list-item:hover,
 	.blog-sub-nav-details .blog-sub-nav-item:hover,
@@ -83,17 +82,17 @@
         margin-right: 20px !important;
     }
     .l-header-container .logo .png-logo {
-        background: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Tumblr_icon.png") center !important;
-        background-size: cover !important;
-        padding: 24px 10px !important;
-        margin-top: 2px !important;
+        background: no-repeat url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Tumblr_icon.png") center !important;
+        background-size: 40px auto !important;
+        margin-top: 1px !important;
+		margin-right: -20px !important;
     }
     .l-header-container .logo .png-logo:hover {
-        background: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Tumblr_icon.png") center !important;
-        background-size: cover !important;
-        padding: 24px 10px !important;
         opacity: .6 !important;
     }
+.preload-container {
+    display: none !important;
+}
     .l-header-container #search_query {
         border-radius: 2px !important;
         font-family: "Roboto" !important;
@@ -374,8 +373,8 @@
         float: none !important;
     }
     .new_post_label i {
-	font-size: 30pt !important;
-	margin-left: 4px !important;                                     
+		font-size: 30pt !important;
+		margin-left: 4px !important;                                     
     }
     #dashboard_index .post-form .post-container,
 	#dashboard_posts_likes .post-form .post-container,
@@ -423,7 +422,6 @@
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column #posts.posts,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column #posts.posts {
 	    /*** DASHBOARD/TAGGED LEFT COLUMN POSTS ***/
-        width: 100% !important;
 	    margin: 0 7vw !important;
 	    display: flex !important;
 	    flex-flow: row wrap !important;
