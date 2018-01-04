@@ -11,7 +11,8 @@
 	.blog-list-item:hover,
 	.blog-sub-nav-details .blog-sub-nav-item:hover,
     .blog-sub-nav-details .blog-sub-nav-item.currentItem, 
-    .blog-sub-nav-details .blog-sub-nav-item.selected {
+    .blog-sub-nav-details .blog-sub-nav-item.selected, 
+    .blog-sub-nav-details .blog-sub-nav-item:hover {
         background: transparent !important;
         box-shadow: none !important;
     }
@@ -152,8 +153,9 @@
     }
     .popover--inbox-popover .popover-inner .blog-selector-container .selected-blog .name {
         color: #65878F !important;
-        font-stretch: condensed !important;
         font-size: 13pt !important;
+        font-stretch: condensed !important;
+		font-weight: normal !important;
         letter-spacing: .5px !important;
         text-transform: capitalize !important;
     }
@@ -169,6 +171,7 @@
     .popover--inbox-popover .popover-inner .messaging-inbox .inbox-row h3 {
         font-size: 13pt !important;
         font-stretch: condensed !important;
+		font-weight: normal !important;
         letter-spacing: .5px !important;
     }
     .popover--inbox-popover .popover-inner .messaging-inbox .send-link {
@@ -215,6 +218,7 @@
         color: #65878F !important;
         font-stretch: condensed !important;
         font-size: 13pt !important;
+		font-weight: normal !important;
         letter-spacing: .5px !important;
         text-transform: capitalize !important;
     }
@@ -279,6 +283,7 @@
     .popover--account-popover .blog-list-item .blog-list-item-info .blog-list-item-info-name {
         font-size: 13pt !important;
         font-stretch: condensed !important;
+		font-weight: normal !important;
         letter-spacing: .5px !important;
         padding-bottom: 5px !important;
         text-transform: capitalize !important;
@@ -461,7 +466,7 @@
 	    border-bottom: 1px solid #EBEBEB !important;
 	    font-size: 13pt !important;
 	    font-stretch: condensed !important;
-	    letter-spacing: 1px !important;
+	    letter-spacing: .5px !important;
 	    line-height: 20px !important;
 	    padding-top: 6px !important;
 	    padding-bottom: 40px !important;
@@ -481,6 +486,11 @@
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_info_fence,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_info_fence {
         padding-bottom: 4px !important;
+    }
+    #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_info_fence .post_info_link,
+	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_info_fence .post_info_link,
+	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_info_fence .post_info_link {
+        font-weight: normal !important;
     }
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_header .reblog_icon,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_header .reblog_icon,
