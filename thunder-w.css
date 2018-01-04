@@ -11,8 +11,7 @@
 	.blog-list-item:hover,
 	.blog-sub-nav-details .blog-sub-nav-item:hover,
     .blog-sub-nav-details .blog-sub-nav-item.currentItem, 
-    .blog-sub-nav-details .blog-sub-nav-item.selected, 
-    .blog-sub-nav-details .blog-sub-nav-item:hover {
+    .blog-sub-nav-details .blog-sub-nav-item.selected {
         background: transparent !important;
         box-shadow: none !important;
     }
