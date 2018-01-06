@@ -383,6 +383,7 @@
         position: fixed !important;
         bottom: -75px !important;
         right: 0px !important;
+	left: 0px !important;
         z-index: 999 !important;
     }
 
