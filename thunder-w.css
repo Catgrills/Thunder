@@ -172,6 +172,11 @@
         margin-left: 5px !important;
     }
 
+    .popover--inbox-popover,
+	.popover--account-popover {
+    	z-index: 99 !important;
+	}
+    
     .popover--inbox-popover .popover-inner {
         border-top: 6px solid #97CE68 !important;
         border-radius: 1px !important;
