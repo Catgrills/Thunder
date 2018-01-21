@@ -1,15 +1,17 @@
 # Thunder-W
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1227.png)
-Preview of Thunder-W.
+![screenshot](https://s1.gifyu.com/images/Screenshot-1282.png)
+
+![screenshot](https://s1.gifyu.com/images/Screenshot-1283.png)
+
+Preview of <i>Thunder-W</i>.
 
 About
 -------------------------------
 
-Thunder-W is a custom stylesheet for tumblr.
+<i>Thunder-W</i> is a custom stylesheet for <i>Tumblr</i>.
 
-A custom stylesheet (or userstyles) is a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
-
+Userstyles are CSS code designed to alter the appearance of one, some, or all sites.
 
 Instruction
 -------------------------------
@@ -35,8 +37,8 @@ Instruction
 
 I use several fonts for my custom stylesheet.
 <ol>
-<li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
 <li> <a href="http://www.freejapanesefont.com/bokutachi-gothic-2-bold/">Bokutachi no Gothic 2 </a></li>
+<li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
 </ol>
 
 <strong>Step 4 : Show your appreciation </strong>
@@ -46,13 +48,7 @@ I use several fonts for my custom stylesheet.
 <li>You can share it, but don't forget to mention me.</li>
 </ol>
 
-Trivia
--------------------------------
-
-I decided to name the script <i>Thunder-W</i> because Tumblr looks like Thunder, and I find thunder pretty cool (but dangerous af of course). The <i>W</i> comes from the word Winter, because Winter is coming and days are pretty cold since several weeks.
-
-
 Report
 -------------------------------
 
-If you find some elements that weren't tweaked or that you simply want to modify or re-add an element that was removed, don't hesitate to report it in the comments.
+Don't hesitate to report any issues you find while using this userstyle.
