@@ -376,8 +376,9 @@
         padding: 16px 20px 24px 20px !important;
         width: 100% !important;
         position: fixed !important;
-        bottom: -75px !important;
         right: 0px !important;
+        left: 0px !important;
+        bottom: -75px !important;
         z-index: 999 !important;
     }
 
