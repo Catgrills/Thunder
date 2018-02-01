@@ -107,8 +107,8 @@
     .l-header-container .logo .png-logo {
         background: no-repeat url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Tumblr_icon.png") center !important;
         background-size: 40px auto !important;
-        margin-top: 1px !important;
-        margin-right: -20px !important;
+        margin-top: 0px !important;
+        margin-right: -10px !important;
     }
 
     .l-header-container .logo .png-logo:hover {
@@ -146,7 +146,7 @@
     }
 
     .l-header-container .popover .result_title {
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         letter-spacing: .5px !important;
     }
@@ -172,11 +172,6 @@
         margin-left: 5px !important;
     }
 
-    .popover--inbox-popover,
-	.popover--account-popover {
-    	z-index: 99 !important;
-	}
-    
     .popover--inbox-popover .popover-inner {
         border-top: 6px solid #97CE68 !important;
         border-radius: 1px !important;
@@ -376,14 +371,13 @@
     }
 
     .discover-controls-wrapper {
-        background: rgba(3, 46, 70, .98) !important;
+        background: no-repeat url("https://i.imgur.com/Lp1BsRX.png") top !important;
         border: none !important;
         padding: 16px 20px 24px 20px !important;
         width: 100% !important;
         position: fixed !important;
         bottom: -75px !important;
         right: 0px !important;
-	left: 0px !important;
         z-index: 999 !important;
     }
 
@@ -464,7 +458,7 @@
 
     .new_post_label i {
         font-size: 30pt !important;
-        margin-left: 4px !important;
+        margin-left: 0px !important;
     }
 
     #dashboard_index .post-form .post-container,
@@ -521,7 +515,7 @@
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column #posts.posts {
 
         /*** DASHBOARD/TAGGED LEFT COLUMN POSTS ***/
-        margin: 0 6vw !important;
+        margin: 0 7vw !important;
         display: flex !important;
         flex-flow: row wrap !important;
     }
@@ -567,7 +561,7 @@
 
         /*** DASHBOARD/TAGGED LEFT COLUMN POSTS HEADER  ***/
         border-bottom: 1px solid #EBEBEB !important;
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         letter-spacing: .5px !important;
         line-height: 20px !important;
@@ -623,7 +617,7 @@
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_source_app_name,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_source_app_name,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_source_app_name {
-        color: transparent;
+        visibility: hidden;
     }
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_header .icon_close::before,
@@ -633,6 +627,11 @@
         background-size: cover !important;
         color: transparent !important;
         opacity: .6;
+    }
+
+    .post_full .post_dismiss .post_dismiss_tooltip {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
     }
 
     .post_action_wrapper {
@@ -723,10 +722,22 @@
         margin-top: 18px !important;
     }
 
+    #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
+    #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
+    #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_body * {
+        font-family: "Roboto", "KFhimaji" !important;
+        font-size: 12pt !important;
+    }
+
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_tags.fadeable,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .post_tags.fadeable,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_tags.fadeable {
+        max-height: 1000px !important;
         margin-top: 20px !important;
+    }
+
+    .see-all-tags {
+        display: none;
     }
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post-source-footer,
@@ -819,6 +830,35 @@
         text-transform: lowercase !important;
     }
 
+    .post_full .post_notes_label .note_link_current {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
+    .post_brick .post_notes_label {
+        font-size: 13pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
+    .recommendation-reason-footer {
+        display: none;
+    }
+
+    .post_full .post_tags .post_tag,
+    .post_brick .post_tags .post_tag {
+        background: #0F6177 !important;
+        border-radius: 2px !important;
+        color: #FFF !important;
+        font-family: "Roboto", "KFhimaji" !important;
+        font-size: 12pt !important;
+        font-stretch: condensed !important;
+        padding: 6px 10px !important;
+        margin-right: 5px !important;
+        margin-bottom: 5px !important;
+    }
+
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .rapid-recs-container .rapid-recs,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .rapid-recs-container .rapid-recs,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .rapid-recs-container .rapid-recs {
@@ -892,24 +932,36 @@
         border-bottom: 1px solid #EBEBEB !important;
     }
 
+    .discover .post-info-post-tumblelog {
+        font-size: 12pt !important;
+        font-weight: normal !important;
+    }
+
     .discover .follow_link.worded-follow-button .follow-text {
         background: #2CC990 !important;
         border-radius: 2px !important;
-        padding: 1px 10px 2px 10px !important;
+        padding: 2px 10px !important;
         margin-top: -1px !important;
         color: #FFF !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
-        letter-spacing: .5px !important;
+        letter-spacing: 0px !important;
+        text-transform: uppercase !important;
     }
 
     .discover .post_brick .expand-post-content,
     .discover .post_brick.is_photo .post_media + .expand {
-        font-size: 12pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
-        font-weight: bold !important;
-        letter-spacing: 1px !important;
-        text-transform: uppercase !important;
+        font-weight: normal !important;
+        letter-spacing: 0px !important;
+        text-transform: lowercase !important;
+    }
+
+    .discover .post_body,
+    .discover .post_body * {
+        font-family: "Roboto", "KFhimaji" !important;
+        font-size: 11pt !important;
     }
 
     .discover .post_footer.clearfix {
@@ -941,24 +993,36 @@
         border-bottom: 1px solid #EBEBEB !important;
     }
 
+    #search_actions_search .post-info-post-tumblelog {
+        font-size: 12pt !important;
+        font-weight: normal !important;
+    }
+
     #search_actions_search .follow_link.worded-follow-button .follow-text {
         background: #2CC990 !important;
         border-radius: 2px !important;
-        padding: 1px 10px 2px 10px !important;
+        padding: 2px 10px !important;
         margin-top: -1px !important;
         color: #FFF !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
-        letter-spacing: .5px !important;
+        letter-spacing: 0px !important;
+        text-transform: uppercase !important;
     }
 
     #search_actions_search .post_brick .expand-post-content,
     #search_actions_search .post_brick.is_photo .post_media + .expand {
-        font-size: 12pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
-        font-weight: bold !important;
-        letter-spacing: 1px !important;
-        text-transform: uppercase !important;
+        font-weight: normal !important;
+        letter-spacing: 0px !important;
+        text-transform: lowercase !important;
+    }
+
+    #search_actions_search .post_body,
+    #search_actions_search .post_body * {
+        font-family: "Roboto", "KFhimaji" !important;
+        font-size: 11pt !important;
     }
 
     #search_actions_search .post_footer.clearfix {
