@@ -371,7 +371,8 @@
     }
 
     .discover-controls-wrapper {
-        background: no-repeat url("https://i.imgur.com/Lp1BsRX.png") top !important;
+        background: no-repeat url("https://i.imgur.com/gz4nqGy.jpg") center 15% !important;
+        background-size: cover !important;
         border: none !important;
         padding: 16px 20px 24px 20px !important;
         width: 100% !important;
