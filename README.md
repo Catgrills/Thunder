@@ -1,6 +1,6 @@
 # Thunder-W
 
-![screenshot](https://s1.gifyu.com/images/Sceenshot-1346.png)
+![screenshot](https://s1.gifyu.com/images/Screenshot-1346.png)
 
 ![screenshot](https://s1.gifyu.com/images/Screenshot-1345.png)
 
