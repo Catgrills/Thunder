@@ -819,7 +819,7 @@
         margin-left: 5px !important;
     }
 
-    #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header .reblog-list-item .reblog-tumblelog-name,
+    #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header .reblog-tumblelog-name,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header .reblog-tumblelog-name,
 	#discover_actions_discover .reblog-list-item .reblog-header .reblog-tumblelog-name,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header .reblog-tumblelog-name {
@@ -840,7 +840,7 @@
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
-	.reblog-list-item .reblog-content w{
+	.reblog-list-item .reblog-content {
         font-family: "Roboto", "KFhimaji" !important;
         font-size: 14pt !important;
         font-stretch: condensed;
@@ -861,6 +861,8 @@
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post-source-footer,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post-source-footer,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post-source-footer {
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
         padding-bottom: 19px !important;
     }
 
@@ -1044,8 +1046,7 @@
     }
 
     .post_full .post_tags .post_tag,
-    .post_brick .post_tags .post_tag,
-	.reblog-content {
+    .post_brick .post_tags .post_tag {
         background: #0F6177 !important;
         border-radius: 2px !important;
         color: #FFF !important;
