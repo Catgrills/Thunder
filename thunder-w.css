@@ -1,6 +1,5 @@
 @-moz-document domain("tumblr.com") {
-
-    /* GENERAL */
+/* GENERAL */
 
     /** DESCRIPTION : change the elements of all page **/
     * {
@@ -10,6 +9,11 @@
     body {
         overflow-x: hidden;
     }
+
+	input::-moz-placeholder{
+    	font-size: 14pt !important;
+        font-stretch: condensed;
+	}
 
     .popover_menu_item:hover,
     .blog-list-item:hover,
@@ -43,6 +47,7 @@
 
         /*** NO RESULT CONTAINER ***/
         color: #212121 !important;
+        font-stretch: condensed !important;
     }
 
     .results_end_body .search_query_highlight {
@@ -80,16 +85,21 @@
         color: #1DABB8 !important;
         font-size: 21pt !important;
     }
-
-    .notification.single_notification.alt.takeover-container.big-margin,
-    #posts.posts > li.notification.single_notification,
-    .popover_legal_link,
-    .tags-and-tumblelogs,
+	
     .blogs_wrapper.indash_blogs,
-    .search_controls .right_controls {
+    .notification.single_notification.alt.takeover-container.big-margin,
+    .popover_legal_link,
+    #posts.posts > li.notification.single_notification,
+	.post-brick-source-footer,
+    .search_controls .right_controls,
+    .tags-and-tumblelogs {
 
         /*** MISC ***/
         display: none;
+    }
+
+    .l-footer {
+       visibility: hidden;   
     }
 
     /* HEADER */
@@ -122,8 +132,15 @@
     .l-header-container #search_query {
         border-radius: 2px !important;
         font-family: "Roboto" !important;
-        font-size: 11pt !important;
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
         padding: 0px 11px 2px 11px !important;
+    }
+
+    .is-following.show-unfollow.search-follow-button .unfollow-text, 
+    .worded-follow-button.is-following.show-unfollow .unfollow-text,
+	.search-follow-button {
+        display: none !important;
     }
 
     .l-header-container .ui_search.active .search_query,
@@ -191,7 +208,7 @@
 
     .popover--inbox-popover .popover-inner .blog-selector-container .selected-blog .name {
         color: #65878F !important;
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: normal !important;
         letter-spacing: .5px !important;
@@ -200,7 +217,7 @@
 
     .popover--inbox-popover .popover-inner .compose-toggle.compose-start,
     .popover--inbox-popover .popover-inner .messaging-inbox .inbox-compose-toggle .compose-cancel {
-        font-size: 11pt !important;
+        font-size: 12pt !important;
         font-weight: normal !important;
         text-transform: lowercase !important;
     }
@@ -210,13 +227,14 @@
     }
 
     .popover--inbox-popover .popover-inner .messaging-inbox .inbox-row h3 {
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: normal !important;
         letter-spacing: .5px !important;
     }
 
     .popover--inbox-popover .popover-inner .messaging-inbox .send-link {
+        font-size: 12pt !important;
         font-weight: normal !important;
         padding-bottom: 5px !important;
         text-transform: lowercase !important;
@@ -268,10 +286,41 @@
     .popover--activity-popover .blog-selector-container .selected-blog .name {
         color: #65878F !important;
         font-stretch: condensed !important;
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-weight: normal !important;
         letter-spacing: .5px !important;
         text-transform: capitalize !important;
+    }
+
+    .ui_notes .date_header, .ui_notes .date_header.date_activity {
+        background-color: #F0F1F5 !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        padding: 15px !important;
+    }    
+
+    .part_relative_date {
+        font-weight: normal !important;
+        text-transform: capitalize !important;
+    }
+
+    .blog-activity .blog-activity-more {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        padding: 8px 10px 10px 10px !important;
+        text-transform: lowercase !important;
+    }
+
+    .ui_notes .activity-notification .activity-notification__avatar,
+	.ui_notes .activity-notification .activity-notification__icon .note_follow {
+        width: 20px;
+        visibility: hidden !important;
+    }
+
+    .ui_notes .activity-notification .activity-notification__activity .activity-notification__activity_message * {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
     }
 
     .popover--activity-popover .blog-activity {
@@ -313,12 +362,13 @@
         height: 35px !important;
         font-size: 12.5pt !important;
         font-stretch: condensed !important;
+        font-weight: normal !important;
         letter-spacing: .3px !important;
     }
 
     .popover--account-popover .popover_menu_item_anchor {
         color: #8199A3 !important;
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: normal !important;
         letter-spacing: 0.3px !important;
@@ -335,7 +385,7 @@
     }
 
     .popover--account-popover .popover .popover_menu_item .popover_item_suffix {
-        font-size: 11pt !important;
+        font-size: 12pt !important;
         font-stretch: condensed !important;
     }
 
@@ -345,7 +395,7 @@
     }
 
     .popover--account-popover .blog-list-item .blog-list-item-info .blog-list-item-info-name {
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: normal !important;
         letter-spacing: .5px !important;
@@ -359,7 +409,7 @@
 
     .blog-sub-nav-details .blog-sub-nav-item {
         color: #8199A3 !important;
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: normal !important;
         letter-spacing: 0.3px !important;
@@ -371,7 +421,7 @@
     }
 
     .discover-controls-wrapper {
-        background: no-repeat url("https://i.imgur.com/gz4nqGy.jpg") center 15% !important;
+        background: #1B3C4E !important;
         background-size: cover !important;
         border: none !important;
         padding: 16px 20px 24px 20px !important;
@@ -383,20 +433,22 @@
         z-index: 999 !important;
     }
 
-    .types-tabs .content-control::after {
-        color: #8199A3 !important;
-        content: " /" !important;
-        padding-left: 5px !important;
-    }
-
     .content-control[href="/explore/asks"]::after {
         content: "" !important;
     }
 
     .discover-controls-wrapper .types-tabs a {
-        font-size: 12pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
-        margin-right: -5px !important;
+        margin-right: 0px !important;
+    }
+
+	.discover-controls-wrapper .types-tabs > .content-control.active {
+    	font-weight: normal !important;
+	}
+
+    .discover-controls-wrapper .types-tabs > .content-control:nth-child(2) {
+        margin-left: 3px !important;
     }
 
     /* DASHBOARD/TAGGED */
@@ -409,7 +461,7 @@
     .post_avatar.show_user_menu.post-avatar--sticky {
 
         /*** DASHBOARD/TAGGED BACKGROUND ***/
-        background: #FFF !important;
+        background: #F0F1F5 !important;
     }
 
     #dashboard_index .l-container .l-content,
@@ -417,6 +469,7 @@
     #tagged_actions_display .l-container .l-content {
 
         /*** DASHBOARD/TAGGED/LIKES CONTENT ***/
+        background: #F0F1F5 !important;
         width: 100% !important;
         position: absolute !important;
         left: 0px !important;
@@ -456,11 +509,16 @@
         text-transform: uppercase !important;
         display: inline-block !important;
         float: none !important;
+        margin-bottom: -93px !important;
     }
 
     .new_post_label i {
         font-size: 30pt !important;
         margin-left: 0px !important;
+    }
+
+    .new_post_label_text {
+        display: none !important;    
     }
 
     #dashboard_index .post-form .post-container,
@@ -482,14 +540,17 @@
     #dashboard_posts_likes .tumblelog-select *,
     #tagged_actions_display .tumblelog-select * {
         color: #FFF !important;
-        font-size: 12pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
+        font-weight: normal !important;
         letter-spacing: .5px !important;
     }
 
     #dashboard_index .editor-placeholder,
     #dashboard_posts_likes .editor-placeholder,
     #tagged_actions_display .editor-placeholder {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
         width: 100% !important;
     }
 
@@ -499,8 +560,16 @@
     #dashboard_posts_likes .editor-richtext,
     #tagged_actions_display .editor-plaintext,
     #tagged_actions_display .editor-richtext {
+        font-stretch: condensed !important;
         margin-top: 20px !important;
         width: 100% !important;
+    }
+
+    .tx-button,
+	.post-form--controls .controls-container .post-form--save-button .split-button .button-area {
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
     }
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column,
@@ -583,7 +652,6 @@
         color: #EB6361 !important;
         transition: all .3s ease-in-out !important;
     }
-
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_info_fence,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_info_fence,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_info_fence {
@@ -690,6 +758,21 @@
         width: 27vw !important;
     }
 
+    .post_full.is_link .link-button {
+        background: #FFF !important;
+    }
+
+    .post_full.is_link .link-button .excerpt, 
+	.post_full.is_link .link-button .publisher-container * {
+        font-size: 14pt !important;
+        font-weight: normal !important;
+    }
+
+    .post_full.is_link .link-button .title {
+        font-size: 20pt !important;
+        font-weight: normal !important;
+    }
+
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .dockable_video_embed,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .dockable_video_embed,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .dockable_video_embed {
@@ -713,9 +796,39 @@
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header,
+	#discover_actions_discover .reblog-list-item .reblog-header,
     #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header {
+        background: #F0F1F5 !important;
+        border-radius: 2px !important;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+        font-stretch: condensed !important;
+        padding: 10px !important;
         margin-bottom: 15px;
         margin-top: 15px !important;
+    }
+
+    #dashboard_index .reblog-list-item .reblog-avatar, 
+	#dashboard_index .reblog-list-item .reblog-avatar .reblog-avatar-image-thumb,
+	#dashboard_posts_likes .reblog-list-item .reblog-avatar, 
+	#dashboard_posts_likes .reblog-list-item .reblog-avatar .reblog-avatar-image-thumb,
+	#discover_actions_discover .reblog-list-item .reblog-avatar, 
+	#discover_actions_discover .reblog-list-item .reblog-avatar .reblog-avatar-image-thumb,
+	#tagged_actions_display .reblog-list-item .reblog-avatar, 
+	#tagged_actions_display .reblog-list-item .reblog-avatar .reblog-avatar-image-thumb {
+        border-radius: 50% !important;
+        margin-left: 5px !important;
+    }
+
+    #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header .reblog-list-item .reblog-tumblelog-name,
+	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header .reblog-tumblelog-name,
+	#discover_actions_discover .reblog-list-item .reblog-header .reblog-tumblelog-name,
+    #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header .reblog-tumblelog-name {
+        font-size: 14pt !important;
+        font-weight: normal !important;
+    }
+
+	#discover_actions_discover .reblog-list-item .reblog-header .reblog-tumblelog-name {
+        margin-left: 40px !important;
     }
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_media + .post_body:not(:empty),
@@ -726,9 +839,12 @@
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
     #dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
-    #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_body * {
+    #tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
+	.reblog-list-item .reblog-content w{
         font-family: "Roboto", "KFhimaji" !important;
-        font-size: 12pt !important;
+        font-size: 14pt !important;
+        font-stretch: condensed;
+        font-weight: normal;
     }
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_tags.fadeable,
@@ -758,6 +874,8 @@
 
     #dashboard_index .post-activity-popover,
     #dashboard_posts_likes .post-activity-popover,
+	#discover_actions_discover .post-activity-popover,
+	#search_actions_search .post-activity-popover,
     #tagged_actions_display .post-activity-popover {
         border: none !important;
         border-radius: 1px !important;
@@ -765,32 +883,109 @@
         z-index: 89 !important;
     }
 
+    .post-activity-popover .popover-inner.popover_inner,
+	.post-activity-popover .post-activity {
+        width: 400px !important;    
+    }
+
+    .post-activity-header.conversation {
+        background: #36465d !important;
+    }
+
     #dashboard_index .post-activity-header .primary-message,
     #dashboard_posts_likes .post-activity-header .primary-message,
+	#discover_actions_discover .post-activity-header .primary-message,
+	#search_actions_search .post-activity-header .primary-message,
     #tagged_actions_display .post-activity-header .primary-message {
-        font-size: 12pt !important;
+        color: #FFF !important;
+        font-size: 15pt !important;
         font-stretch: condensed !important;
+        font-weight: normal !important;
+        padding-bottom: 2px !important;
         text-transform: lowercase !important;
     }
 
-    .is-followed.without-commentary.post-activity-note {
+    .is-followed.without-commentary.post-activity-note,
+	.post-activity-note.note-item.posted.without-commentary,
+	.with-commentary .post-activity-note-content .note-content-inner .note-text.reblog,
+	.post-activity-rollup-note {
         display: none !important;
     }
 
+    .rollup-notes-summary span, 
+	.rollup-notes-summary {
+        color: #998E8E !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
+    .post-activity-notes,
+	.post-activity-notes .note-list,
+	.post-activity-note {
+        background: #F0F1F5 !important;    
+    }
+
+    .post-activity-note-avatar .post-activity-avatar-link img {
+        border-radius: 50% !important;
+    }
+
     .with-commentary .post-activity-note-content {
-        border-radius: 1px !important;
-        border: 1px solid #EBEBEB !important;
+        border-radius: 2px !important;
+        border: none !important;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.05) !important;
         padding: 15px !important;
+        width: 85% !important;
+    }
+
+    .post-activity-note-content .note-content-inner {
+        height: 24px !important;
+    }
+
+    .post-activity-note-content .note-text .note-text-link {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
+    .note-text-reblog-parent {
+        font-size: 12pt !important;
+        margin-top: 0px !important;
+    }
+
+    .with-commentary .post-activity-note-content .note-text.reply {
+        display: none !important;
+    }
+
+    .post-activity-note-content .note-added-text {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        margin-top: 0px !important;    
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+    }
+
+    .with-commentary .post-activity-note-content .more-actions {
+        margin-top: 7px !important;
     }
 
     .post-activity-reply .submit {
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         letter-spacing: 1px !important;
         text-transform: uppercase !important;
         position: absolute !important;
         right: 0px !important;
         margin-top: -2px !important;
+        display: none !important;
     }
+
+	.post-activity-reply .text-input {
+    	font-size: 15pt !important;
+        font-stretch: condensed;
+        line-height: 20px !important;
+	}
 
     .popover--messaging-share-post.popover.popover_menu.popover_gradient.popover--base.bottom {
         border-radius: 1px !important;
@@ -849,16 +1044,31 @@
     }
 
     .post_full .post_tags .post_tag,
-    .post_brick .post_tags .post_tag {
+    .post_brick .post_tags .post_tag,
+	.reblog-content {
         background: #0F6177 !important;
         border-radius: 2px !important;
         color: #FFF !important;
         font-family: "Roboto", "KFhimaji" !important;
         font-size: 12pt !important;
         font-stretch: condensed !important;
-        padding: 6px 10px !important;
+        padding: 6px 10px 8px 10px !important;
         margin-right: 5px !important;
         margin-bottom: 5px !important;
+    }
+
+	.post_brick .photo-post-icons .photoset_count::before,
+	.post_brick .post_tags::before, 
+	.post_brick .post_tags::after {
+		content: "" !important;  
+        display: none !important;
+	}
+
+    .post_brick .photo-post-icons .photoset_count .actual_photoset_count {
+        color: #2CC990 !important;
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
+        margin-top: -10px !important;
     }
 
     #dashboard_index .l-container.l-container--two-column-dashboard .left_column .rapid-recs-container .rapid-recs,
@@ -939,6 +1149,11 @@
         font-weight: normal !important;
     }
 
+    .post_brick.reblog_header .post_header .tumblelog_avatar {
+        border-radius: 50% !important;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+    }
+
     .discover .follow_link.worded-follow-button .follow-text {
         background: #2CC990 !important;
         border-radius: 2px !important;
@@ -949,6 +1164,16 @@
         font-weight: bold !important;
         letter-spacing: 0px !important;
         text-transform: uppercase !important;
+    }
+
+    .discover .post_brick.reblog_header .tumblelog_info.is_reblog .post-info-post-tumblelog,
+	.discover .post_brick.reblog_header .tumblelog_info.is_reblog .post-info-post-tumblelog a {
+        line-height: 27px !important;
+        height: 50px !important;
+    }
+
+    .discover .post_brick.reblog_header .tumblelog_info.is_reblog .post-info-parent-tumblelog {
+        display: none;    
     }
 
     .discover .post_brick .expand-post-content,
@@ -963,7 +1188,10 @@
     .discover .post_body,
     .discover .post_body * {
         font-family: "Roboto", "KFhimaji" !important;
-        font-size: 11pt !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+        line-height: 25px !important;
     }
 
     .discover .post_footer.clearfix {
@@ -978,7 +1206,29 @@
     #search_actions_search .search_results_bottom_wrapper.posts_wrapper {
 
         /*** SEARCH BACKGROUND ***/
-        background: #FFF !important;
+        background: #F0F1F5 !important;
+    }
+
+    .search_controls .search_control_items {
+        /*** SEARCH CONTROLS ***/
+        margin-bottom: 20px !important;
+    }
+
+    .search_sub_header {
+        visibility: hidden !important;   
+    }
+
+    .search_control_items .search_control_button,
+	.search_control_items .search_control_link {
+        color: #6E6E6E !important;
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
+    .search_control_items .launch_button .icon_arrow_carrot_down {
+        color: #7E7E7E !important;
+        margin-top: 3px !important;
     }
 
     #search_actions_search .post {
@@ -1024,7 +1274,10 @@
     #search_actions_search .post_body,
     #search_actions_search .post_body * {
         font-family: "Roboto", "KFhimaji" !important;
-        font-size: 11pt !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+        line-height: 25px !important;
     }
 
     #search_actions_search .post_footer.clearfix {
@@ -1045,7 +1298,15 @@
     .l-container.l-container--two-column .l-content {
 
         /*** SETTINGS CONTAINERS BACKGROUND ***/
-        background: #FFF !important;
+        background: #F0F1F5 !important;
+    }
+
+     .l-container.l-container--two-column .left_column {
+		width: 600px !important;
+    }
+
+    .tumblr_settings .settings_heading {
+        border-bottom: 1px solid #E5E5E5 !important;
     }
 
     .l-container.l-container--two-column #left_column.white_pane {
@@ -1067,13 +1328,14 @@
     }
 
     .settings_subheading {
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
-        letter-spacing: .5px !important;
+        font-weight: normal !important;
+        letter-spacing: 0px !important;
     }
 
     .group_content * {
-        font-size: 11pt !important;
+        font-size: 12pt !important;
     }
 
     .l-container.l-container--two-column #left_column {
@@ -1113,6 +1375,27 @@
         font-size: 11pt !important;
     }
 
+    .accordion_header.clearfix, .accordion_header.clearfix * {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
+    .tumblr_settings .setting.checkbox .binary_switch {
+        top: 4px !important;
+    }
+
+    .tumblr_settings--tumblelog .website_theme_group .theme_button,
+	.tumblr_settings .left_column .chrome {
+        font-size: 14pt !important;
+        font-stretch: condensed;
+        font-weight: normal !important;
+        height: 40px !important;
+        line-height: 38px !important;
+        min-width: 130px !important;
+        text-align: center !important;
+    }
+
     .l-container.l-container--two-column .right_column {
 
         /*** SETTINGS CONTAINERS SIDEBAR ***/
@@ -1124,12 +1407,13 @@
 
     .l-container.l-container--two-column #right_column * {
         color: #000 !important;
-        font-size: 13.5pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
+        font-weight: normal !important;
     }
 
     .l-container.l-container--two-column #right_column .controls_section.controls_section_settings .selected {
-        background: #F8F8F8 !important;
+        background: transparent !important;
     }
 
     .l-container.l-container--two-column .controls_section.controls_section_settings {
@@ -1302,5 +1586,4 @@
     #dashboard_messages_inbox #right_column {
         display: none !important;
     }
-
 }
