@@ -27,11 +27,17 @@ Instruction
 
 <strong>Step 2 : Install the script </strong>
 <ol>
-<li> Via <a href="https://userstyles.org/styles/152598/thunder-w-tumblr-css">userstyles</a> : click the button <i>install Style</i> and it's done.</li>
-<li> Or <a href="https://pastebin.com/saMAGCdZ">manually</a> : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+<li> Via userstyles (<a href="https://userstyles.org/styles/152598/thunder-w-light-tumblr-css">light version</a> or <a href="https://userstyles.org/styles/157566/thunder-w-dark-tumblr-css">dark version</a>) : click the button <i>install Style</i> and it's done.</li>
+<li> Or manually (<a href="https://pastebin.com/saMAGCdZ">light version</a> or <a href="https://pastebin.com/RzfK35K8">dark version</a>) : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+<li><b>(NEW) STYLUS ONLY</b> : Import <a href="https://mega.nz/#F!4TIBUTaK!68UQF79dszA23h5snooTRw">thunder-w.json</a> in Stylus by clicking the button <i>Import Styles</i>. You can change theme by clicking the gear icon next to the script name in the managment styles page.</li>
 </ol>
 
-<strong>Step 3 : Install the font </strong>
+<strong> Step 3 : Install others scripts </strong>
+<ol>
+ <li>Install <a href="https://greasyfork.org/en/scripts/39918-tumblr-misc-edition">Tumblr : Misc Edition</a></li>
+</ol>
+
+<strong>Step 4 : Install the font </strong>
 
 I use several fonts for my custom stylesheet.
 <ol>
@@ -39,7 +45,7 @@ I use several fonts for my custom stylesheet.
 <li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
 </ol>
 
-<strong>Step 4 : Show your appreciation </strong>
+<strong>Step 5 : Show your appreciation </strong>
 <ol>
 <li>Feel free to comment this submission (critique, suggestion, compliment, etc).</li>
 <li>If you like my works, don't hesitate to watch me.</li>
