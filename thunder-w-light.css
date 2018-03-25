@@ -132,15 +132,16 @@
 	#trigger-btn {
 		background: no-repeat url("https://i.imgur.com/pGlESDe.png") center !important;
 		background-color: transparent !important;
-		background-size: 25px auto !important;
+		background-size: 30px auto !important;
 		border: none !important;
 		color: transparent !important;
-		height: 20px !important;
+		height: 30px !important;
 		width: 30px !important;
-		position: fixed !important;
-		top: 27px !important;
-		left: 90px !important;
 		filter: invert(1) !important;
+		position: absolute !important;
+		top: 14px !important;
+		margin-left: -40px !important;
+		z-index: 9999 !important;
 	}
 
 	.l-header-container .logo {
