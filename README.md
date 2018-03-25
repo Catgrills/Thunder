@@ -1,6 +1,6 @@
 # Thunder-W
 
-<img src="preview_thunder-w.png" width="100%">
+<img src="preview_2_thunder-w.png" width="100%">
 
 Preview of <i>Thunder-W</i>.
 
