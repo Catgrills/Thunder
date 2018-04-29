@@ -589,10 +589,6 @@
 		margin-left: 0px !important;
 	}
 
-	.new_post_label_text {
-		display: none !important;
-	}
-
 	#dashboard_index .post-form .post-container,
 	#dashboard_posts_likes .post-form .post-container,
 	#tagged_actions_display .post-form .post-container {
