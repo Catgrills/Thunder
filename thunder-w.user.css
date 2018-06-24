@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Thunder-W
 @namespace      https://github.com/Catgrills/Thunder-W
-@version        1.0.1
+@version        1.0.2
 @description    An userstyle for Tumblr called Thunder-W.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -136,6 +136,7 @@
 	.post_brick .post_tags .post_tag::before,
 	.post-brick-source-footer,
 	.search_controls .right_controls,
+	.standalone-ad-container,
 	.tags-and-tumblelogs {
 
 		/*** MISC ***/
