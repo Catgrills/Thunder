@@ -1,13 +1,13 @@
-# Thunder-W
+# Thunder
 
-<img src="preview_2_thunder-w.png" width="100%">
+<img src="preview.png" width="100%">
 
-Preview of <i>Thunder-W</i>.
+Preview of <i>Thunder</i>.
 
 About
 -------------------------------
 
-<i>Thunder-W</i> is an user style for <i>Tumblr</i>.
+<i>Thunder</i> is an user style for <i>Tumblr</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
@@ -22,8 +22,7 @@ Instruction
 + for <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Opera</a>
 
 <strong>Step 2 : Install the script </strong>
-+ Via <b>userstyles</b> : <a href="https://userstyles.org/styles/157566/thunder-w-dark-tumblr-css">Dark theme</a> or <a href="https://userstyles.org/styles/152598/thunder-w-light-tumblr-css">Light theme</a>
-+ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Thunder-W/master/thunder-w.user.css">click here</a>
++ Directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Thunder/master/tumblr.user.css">click here</a>
 
 <strong> Step 3 : Install others scripts </strong>
 <ol>
