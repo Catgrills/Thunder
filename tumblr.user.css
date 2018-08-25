@@ -152,6 +152,7 @@
 	/** DESCRIPTION : change the elements of the header **/
 	.l-header-container--refresh {
 		padding: 10px !important;
+        	position: absolute;
 	}
 
 	#trigger-btn {
