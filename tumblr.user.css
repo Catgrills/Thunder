@@ -958,7 +958,8 @@
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_media + .post_body:not(:empty) {
 		margin-top: 18px !important;
 	}
-
+	
+    	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body,
 	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
