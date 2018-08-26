@@ -1393,6 +1393,30 @@
 		color: #7E7E7E !important;
 		margin-top: 3px !important;
 	}
+	
+	.filter_popover .menu_inner {
+		background: var(--card-bg);
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+	}
+
+	.search_control_items .menu_item:hover {
+		background: transparent;
+	}
+
+	.filter_popover .menu_inner * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	.menu_item_text {
+		margin-top: -6px !important;
+	}
+
+	.search_control_items .item_divider {
+		border-color: var(--border-color);
+	}
 
 	#search_actions_search .post {
 
