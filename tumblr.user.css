@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Thunder
 @namespace      https://github.com/Catgrills/Thunder
-@version        1.0.2
+@version        1.0.3
 @description    An user style for Tumblr called Thunder.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -108,8 +108,8 @@
 
 		/*** TOP BUTTON ***/
 		position: fixed !important;
-		left: 40px !important;
-		bottom: 45px !important;
+		left: 30px !important;
+		bottom: 35px !important;
 	}
 
 	#search_actions_search .elevator-wrapper.visible {
@@ -117,8 +117,8 @@
 	}
 
 	#discover_actions_discover .elevator-wrapper.visible {
-		bottom: 45px !important;
-		left: 28px !important;
+		bottom: 35px !important;
+		left: 18px !important;
 	}
 
 	.elevator-wrapper.visible .elevator {
