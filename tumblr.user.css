@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Thunder
 @namespace      https://github.com/Catgrills/Thunder
-@version        1.0.3
+@version        1.0.4
 @description    An user style for Tumblr called Thunder.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -32,7 +32,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("tumblr.com") {
-/*[[theme]]*/
+
+	/*[[theme]]*/
+
 	/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
@@ -113,7 +115,8 @@
 	}
 
 	#search_actions_search .elevator-wrapper.visible {
-		bottom: 65px !important;
+		bottom: 35px !important;
+        left: 18px !important;
 	}
 
 	#discover_actions_discover .elevator-wrapper.visible {
@@ -152,7 +155,7 @@
 	/** DESCRIPTION : change the elements of the header **/
 	.l-header-container--refresh {
 		padding: 10px !important;
-        	position: absolute;
+        position: absolute;
 	}
 
 	#trigger-btn {
@@ -176,7 +179,7 @@
 	}
 
 	.l-header-container .logo .png-logo {
-		background: no-repeat url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Tumblr_icon.png") center !important;
+		background: no-repeat url("https://i.imgur.com/ZTfwR10.png") center !important;
 		background-size: 40px auto !important;
 		margin-top: 0px !important;
 		margin-right: -10px !important;
@@ -758,6 +761,10 @@
 		padding-bottom: 4px !important;
 	}
 
+	.post_info_fence.has_follow_button {
+        margin-top: -3px !important;
+    }
+
 	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_info_fence .post_info_link,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_info_fence .post_info_link,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_info_fence .post_info_link {
@@ -824,7 +831,8 @@
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post.post_full .post_media div,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post.post_full .post_media img,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .note_item,
-	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column #player {
+	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column #player,
+	#search_posts .post_content .post_content_inner .note_item {
 
 		/*** DASHBOARD/TAGGED LEFT COLUMN POSTS CONTENT ***/
 		width: 100% !important;
@@ -881,6 +889,7 @@
 	.post .post-content-text .title-field *,
 	.post .post_body h1,
 	.reblog-content h1,
+	.reblog-title,
 	.quote {
 		color: var(--primary-color) !important;
 		font-size: 20pt !important;
@@ -906,6 +915,7 @@
 
 	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .note_item,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .note_item,
+	#search_posts .post_content .post_content_inner .note_item,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .note_item {
 		background: var(--card-bg-2) !important;
 		border: 1px solid var(--border-color) !important;
@@ -914,6 +924,13 @@
 		margin-top: 12px !important;
 		margin-bottom: 10px !important;
 	}
+
+    #search_posts .post_content .post_content_inner .note_item * {
+        color: var(--primary-color);
+        font-size: 14pt;
+        font-stretch: condensed;
+        font-weight: normal;
+    }
 
 	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .reblog-list-item .reblog-header,
@@ -958,8 +975,8 @@
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_media + .post_body:not(:empty) {
 		margin-top: 18px !important;
 	}
-	
-    	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body,
+
+    #dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body,
 	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full .post_body *,
@@ -1222,6 +1239,11 @@
 		display: none !important;
 	}
 
+    .post_full.is_photoset .photoset .photoset_row .photoset_photo {
+        display: block !important;
+        margin: -4px 0px 0px 0px;
+    }
+
 	.post_brick .photo-post-icons .photoset_count .actual_photoset_count {
 		color: #2CC990 !important;
 		font-size: 15pt !important;
@@ -1375,12 +1397,17 @@
 	.search_controls .search_control_items {
 
 		/*** SEARCH CONTROLS ***/
+        margin-top: -10px;
 		margin-bottom: 20px !important;
 	}
 
 	.search_sub_header {
 		visibility: hidden !important;
 	}
+    
+    .search_controls.clearfix {
+        padding-left: 30px !important;
+    }
 
 	.search_control_items .search_control_button,
 	.search_control_items .search_control_link {
@@ -1394,30 +1421,30 @@
 		color: #7E7E7E !important;
 		margin-top: 3px !important;
 	}
-	
-	.filter_popover .menu_inner {
-		background: var(--card-bg);
-		border-radius: 2px;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
-	}
+    
+    .filter_popover .menu_inner {
+        background: var(--card-bg);
+        border-radius: 2px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+    }
+    
+    .search_control_items .menu_item:hover {
+        background: transparent;
+    }
+    
+    .filter_popover .menu_inner * {
+        color: var(--primary-color);
+        font-size: 14pt;
+        font-stretch: condensed;
+    }
 
-	.search_control_items .menu_item:hover {
-		background: transparent;
-	}
+    .menu_item_text {
+        margin-top: -6px !important;
+    }
 
-	.filter_popover .menu_inner * {
-		color: var(--primary-color);
-		font-size: 14pt;
-		font-stretch: condensed;
-	}
-
-	.menu_item_text {
-		margin-top: -6px !important;
-	}
-
-	.search_control_items .item_divider {
-		border-color: var(--border-color);
-	}
+    .search_control_items .item_divider {
+        border-color: var(--border-color);
+    }
 
 	#search_actions_search .post {
 
