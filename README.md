@@ -7,7 +7,7 @@ Preview of <i>Thunder</i>.
 About
 -------------------------------
 
-<i>Thunder</i> is an user style for <i>Tumblr</i>.
+<i>Thunder</i> is a user style for <i>Tumblr</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
