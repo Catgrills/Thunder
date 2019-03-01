@@ -209,6 +209,7 @@
 		display: none !important;
 	}
 
+	.ui_search .search_query,
 	.l-header-container .ui_search.active .search_query,
 	.l-header-container .ui_search.selected .search_query {
 		background: rgba(0, 0, 0, .13) !important;
@@ -1519,7 +1520,6 @@
 	/* SEARCH */
 
 	/** DESCRIPTION : change the elements of the search page **/
-	.ui_search .search_query,
 	#search_actions_search,
 	#search_actions_search .search_results_bottom_wrapper.posts_wrapper {
 
