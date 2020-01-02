@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Thunder
 @namespace      https://github.com/Catgrills/Thunder
-@version        1.0.6
+@version        1.0.7
 @description    An user style for Tumblr called Thunder.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -236,6 +236,7 @@
 		opacity: .9 !important;
 	}
 
+    .navigation_bg,
 	.tumblelog_popover .indash_header_wrapper .navigation .navigation_inner,
 	.tumblelog_popover .recent_posts {
 		background: var(--card-bg) !important;
@@ -389,6 +390,7 @@
 	.ui_notes .date_header,
 	.ui_notes .date_header.date_activity {
 		background-color: var(--body-bg) !important;
+        color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		padding: 15px !important;
@@ -402,6 +404,7 @@
 	.blog-activity .blog-activity-more {
 		background: var(--card-bg) !important;
 		border-top: 1px solid var(--border-color) !important;
+        color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		padding: 8px 10px 10px 10px !important;
@@ -603,7 +606,7 @@
 		position: fixed !important;
 		bottom: -120px;
 		left: 0px !important;
-		opacity: 0.98 !important;
+		opacity: 0;
 		z-index: 99 !important;
 		transition: all.3s ease-in-out !important;
 	}
@@ -619,6 +622,7 @@
 	#tagged_actions_display #new_post_buttons #new_post .new_post_label,
 	#dashboard_posts_likes #new_post_buttons #new_post .new_post_label {
 		background: none !important;
+        color: var(--primary-color);
 		font-family: "Roboto " !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
@@ -863,6 +867,11 @@
 	#tagged_actions_display .l-container.l-container--two-column-dashboard .left_column .post_full:hover .post_permalink {
 		display: none !important;
 	}
+    
+    .post .post_permalink {
+        border-color: var(--body-bg) var(--body-bg) transparent transparent !important;
+        box-shadow: 2px 0px 0px var(--body-bg), 0px -2px 0px var(--body-bg) !important;
+    }
 
 	#dashboard_index .l-container.l-container--two-column-dashboard .left_column .post.post_full .post_media,
 	#dashboard_posts_likes .l-container.l-container--two-column-dashboard .left_column .post.post_full .post_media,
@@ -1219,7 +1228,7 @@
 		text-transform: lowercase;
 	}
 
-	.post_control.post-control-icon.post_control_menu.creator.active .popover.popover_menu.popover_gradient.popover_post_control {
+	.post_control.post-control-icon.post_control_menu.creator.active         .popover.popover_menu.popover_gradient.popover_post_control {
 		background: #FFF !important;
 		border: 1px solid #EBEBEB !important;
 		border-radius: 1px !important;
@@ -1392,6 +1401,7 @@
 
 	.indash_header_wrapper .navigation a .name,
 	.indash_header_wrapper .navigation a .full_url {
+        color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		margin-top: -3px !important;
